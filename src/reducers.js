@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 
-const weatherReducer = (current_user={}, action) => {
+const weatherReducer = (torontoWeather={}, action) => {
     switch (action.type) {
-        case "GET_USER_INFO":
+        case "GET_TOR_WEATHER":
             return action.payload.data
 
         default:
-            return current_user;
+            return torontoWeather;
     }
 };
 
